@@ -17,3 +17,28 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int R =rand()%4  ;
+	const int tempA = a ;
+	const int tempB = b ;
+	const int tempC = c ;
+	const int tempD = d ;
+	if (R == 0){
+		c = a ;
+		a = tempC ; 
+	} 
+	else if (R == 1){
+		d = b ;
+		b = tempD ;
+	}
+	else if (R == 2){
+		a = b ;
+		b = tempA ;
+	}
+	else if (R == 3){
+		b = c ;
+		c = tempB ;
+	}
+}
+	
